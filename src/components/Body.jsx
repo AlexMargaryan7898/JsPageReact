@@ -13,5 +13,4 @@ const Body = ({ contact }) => {
     </tr>
   );
 };
-
 export default Body;
