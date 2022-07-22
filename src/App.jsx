@@ -1,11 +1,11 @@
 import React from "react";
 import AppRouter from "./components/Router.jsx";
 
-const  App = () => {
+const App = () => {
   return (
     <div className="App">
-        <AppRouter/>
-      </div>
+      <AppRouter />
+    </div>
   );
-}
+};
 export default App;

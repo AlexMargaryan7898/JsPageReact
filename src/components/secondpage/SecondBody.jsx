@@ -1,7 +1,7 @@
 import React from "react";
 import "./SecondBody.css";
 
-const SecondBody = ({ contact} ) => {
+const SecondBody = ({ contact }) => {
   return (
     <tr>
       <td>{contact.id}</td>

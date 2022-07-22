@@ -1,39 +1,36 @@
-.Table{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 1rem;
-      border: 1px solid #000000;
+.Table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  border: 1px solid #000000;
   text-align: left;
   padding: 8px;
   font-size: 32px;
-  }
- table {
-    border-collapse: collapse;
-    width: 100%;
- }
-  th,
-  td {
-    border: 1px solid #000000;
-    text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #000000;
+  text-align: left;
 
-    padding: 8px;
-    font-size: 32px;
-  } 
-  
-  form {
-    display: flex;
-    gap: 5px;
-  }
-  
-  form td:last-child {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  form * {
-    font-size: 28px;
-  }
+  padding: 8px;
+  font-size: 32px;
+}
 
+form {
+  display: flex;
+  gap: 5px;
+}
 
-  
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
+}

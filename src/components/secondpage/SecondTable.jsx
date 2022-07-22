@@ -1,13 +1,19 @@
-import React, { use } from "react";
+import React, { useEffect, useState } from "react";
 import "./SecondTable.css";
 import SecondBody from "./SecondBody";
 import { useParams } from "react-router-dom";
-import contacts from "../mock-data.json";
-
-
 const SecondTable = () => {
   let { id } = useParams();
-  const contact = contacts[id - 1];
+
+  const contacts = JSON.parse(localStorage.getItem("information"));
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    if (id && contacts) {
+      const data = contacts?.find((contact) => contact.id === id);
+      setUser(data);
+    }
+  }, [id, contacts]);
+
   return (
     <div className="Table">
       <form>
@@ -20,9 +26,7 @@ const SecondTable = () => {
               <th>Owner</th>
             </tr>
           </thead>
-          <tbody>
-            <SecondBody contact={contact} />
-          </tbody>
+          <tbody>{user && <SecondBody contact={user} />}</tbody>
         </table>
       </form>
     </div>
